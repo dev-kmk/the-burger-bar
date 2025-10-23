@@ -1,6 +1,6 @@
 <?php
-  include_once('inc/header.inc.php');
-  include_once('inc/menu.inc.php');
+  include_once('inc/header.php');
+  include_once('inc/menu.php');
 ?>
 
 <?php
@@ -18,5 +18,5 @@
 
 <?php
 
-  include_once('inc/footer.inc.php');
+  include_once('inc/footer.php');
 ?>
