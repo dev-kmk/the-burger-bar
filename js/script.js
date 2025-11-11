@@ -20,4 +20,12 @@ window.addEventListener('scroll', function() {
     } else {
         navbar.style.backgroundColor = 'rgba(18, 18, 18, 0.95)';
     }
+
+    rotateBurgerImage();
 });
+
+function rotateBurgerImage() {
+    const burgerImage = document.querySelector('.hero-image');
+    let angle = window.scrollY / 15;
+    burgerImage.style.transform = `rotate(${angle}deg)`;
+}

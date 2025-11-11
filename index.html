@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Burger Bar - Gourmet Burgers & Craft Drinks</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -31,10 +35,23 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>GOURMET BURGERS &<br>CRAFT DRINKS</h1>
-            <p>Experience the finest burgers and handcrafted beverages in town</p>
-            <button class="cta-button">VIEW OUR MENU</button>
+        <div class="inner-wrap h-100">
+            <div class="container-fluid h-100">
+                <div class="row h-100 align-items-center pt-5 row-gap-4">
+                    <div class="col-md-7">
+                        <div class="hero-content"> 
+                            <h1>GOURMET BURGERS & CRAFT DRINKS</h1>
+                            <p>Experience the finest burgers and handcrafted beverages in town</p>
+                            <a href="#menu" class="cta-button">
+                                View Our Menu <i class="bi bi-arrow-right-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/hero-burger.png" alt="Burger Photo" class="hero-image img-fluid">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -68,6 +85,7 @@
         </div>
     </section>
 
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

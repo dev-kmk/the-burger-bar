@@ -20,8 +20,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-family: "Momo Trust Display", sans-serif;
 }
 
 /* Navigation Styles */
@@ -31,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     border-bottom: 2px solid var(--primary-amber);
 }
 
@@ -47,12 +46,14 @@ h1, h2, h3, h4, h5, h6 {
 .logo h2 {
     color: var(--primary-amber);
     font-weight: 900;
+    margin: 0;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin: 0;
 }
 
 .nav-links a {
@@ -71,21 +72,25 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('../images/hero-bg.jpg') center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
-
+.hero-image {
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+.hero .inner-wrap {
+    max-width: 1250px;
+    margin: 0 auto;
+}
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 55px;
     margin-bottom: 1rem;
     color: var(--primary-amber);
-    font-weight: 900;
+    line-height: normal;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
     margin-bottom: 2rem;
     color: var(--creamy-white);
 }
@@ -94,29 +99,62 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--vibrant-red);
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.1rem;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 70px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding: 7px 10px 7px 25px;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    text-decoration: none;
 }
-
+.cta-button i {
+    font-size: 40px;
+    line-height: 0;
+}
 .cta-button:hover {
-    background-color: #c62828;
+    background-color: var(--primary-amber);
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media(max-width: 1199px){
+    .hero-content h1 {
+        font-size: 48px;
+    }
+}
+
+@media(max-width: 991px){
+    .hero-content h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 768px) {
     .nav-links {
         display: none;
     }
-    
+    .hero {
+        height: auto;
+        padding: 70px 0;
+    }
     .hero-content h1 {
         font-size: 2.5rem;
     }
     
     .nav-container {
         padding: 0 1rem;
+    }
+}
+
+@media(max-width: 426px){
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 375px){
+    .hero-content h1 {
+        font-size: 1.8rem;
     }
 }
